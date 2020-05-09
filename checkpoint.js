@@ -70,7 +70,7 @@ function sumArray(array, n) { //
   }
 };
 
-function pluck(array, propiedad) { 
+function pluck(array, propiedad) { ///
   // Escribi una función llamada pluck,
   // que recibe un array de objetos (array) y el nombre de una propiedad (propiedad).
   // La función va a devolver un nuevo arreglo con solo los
@@ -78,12 +78,13 @@ function pluck(array, propiedad) {
   // var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
   // productos.pluck(productos, 'name') // ['TV LCD', 'Computadora']
   // pista: es una buena oportunidad para usar map.
-  var nuevoA = [];
-  for (var i = 0; i < array.length; i++) {
-    nuevoA.push(array[propiedad]);
-
-  }
-  return nuevoA;
+  // var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
+  // productos.pluck(productos, 'name') // ['TV LCD', 'Computadora']
+ var nuevoArr = [];
+ for (var i = 0; i<array.length; i++) {
+   nuevoArr.push(array[i][propiedad]);
+ }
+ return nuevoArr;
 }
 
 
@@ -120,19 +121,19 @@ function crearClasePersona() {
       // no debe retornar nada.
       this.hobbies.push(hobby);
     }
-    getFriends() {
+    getFriends() { ///
       // Escribe una función que retorne un arreglo con sólo los nombres del arreglo de amigos
       // de la persona.
       // Ej:
       // persona.getFriends() // retorna ['toni', 'Leo', 'Manu']
       var nuevoA = [];
       for (var i = 0; i < this.amigos.length; i++) {
-        nuevoA.push(this.amigos[this.nombre]); 
+        nuevoA.push(this.amigos[i].nombre); 
       }
       return nuevoA;
     }
 
-    getHobbies() {
+    getHobbies() { ///
       // Escribe una función que retorne un arreglo con los hobbies de la persona
       // Ej:
       // persona.getHobbies() // retorna ['correr', 'dormir', 'nadar']
