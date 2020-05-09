@@ -60,14 +60,16 @@ function sumArray(array, n) { //
   // pista: podes usar bucles anidados;
   for (var i = 0; i<array.length; i++) {
     for (var j = 0; j<array.length; j++) {
-      if (i!=j && (array[i] + array[j] === n)) {
-        return true;
-      }
-      else {
-        return false;
-      }
-    }
+      if (i!=j) {
+        if (array[i] + array[j] === n){
+          return true;
+        }
+        
+      } 
+  
   }
+}
+return false;
 };
 
 function pluck(array, propiedad) { ///
