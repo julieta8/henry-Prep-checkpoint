@@ -1,7 +1,7 @@
 
 // Funciones
 
-function menorMayor(numeros) { // 3 TODOS
+function menorMayor(numeros) { ///
   // Escribi una función llamada menorMayor que tome como entrada un arreglo de números y devuelva un arreglo 
   // que contenga el menor número del arreglo en la posición cero y el mayor número del arreglo en la posición 1.
   // Ej: menorMayor([4, 6, 1, 7, 15]) // retorna [1, 15]
@@ -21,7 +21,7 @@ function menorMayor(numeros) { // 3 TODOS
  return array;
 }
 
-function stringMasLarga(strings) { //2 TODOS
+function stringMasLarga(strings) { ///
   // Escribe una función llamada stringMasLarga, que tome un arreglo de strings llamado 'strings'
   // tu función debe retornar el string más largo que hay en el arreglo
   // Ej:
@@ -36,7 +36,7 @@ function stringMasLarga(strings) { //2 TODOS
   return mayor;
 }
 
-function buscarAmigo(amigos, nombre) { //2 TODOS
+function buscarAmigo(amigos, nombre) { ///
   // Escribe una funcion que reciba un array de amigos (objetos) y un nombre (string).
   // Tu función debe devolver el amigo que coincida con el nombre recibido por argumento.
   // Cada amigo tiene las propiedades nombre y edad.
@@ -50,7 +50,7 @@ function buscarAmigo(amigos, nombre) { //2 TODOS
   } 
 }
 
-function sumArray(array, n) { //2
+function sumArray(array, n) { //
   // Escribir un algoritmo que, dada un arreglo de números ordenados y un número n, 
   // te devuelva true si alguna combinación de dos números cualesquiera suman n, y devuelva false si ninguna combinación
   // de dos números sumados da como resultado el número n.
@@ -78,15 +78,11 @@ function pluck(array, propiedad) {
   // var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
   // productos.pluck(productos, 'name') // ['TV LCD', 'Computadora']
   // pista: es una buena oportunidad para usar map.
-var nuevoArray = [];
-for (var i = 0; i<array.length; i++) {
-  nuevoArray = nuevoArray.push(array[i].propiedad);
+ 
 }
-return nuevoArray;
-}
+
 
 // =======================================================================
-
 
 function crearClasePersona() {
   // Crear una clase para construir objeto de tipo Persona.
@@ -94,7 +90,7 @@ function crearClasePersona() {
   // nombre (string) , edad (integer) , hobbies (array de strings) , amigos (array de objetos)
   // Esta funcion debe retonar la clase Persona.
 
-  class Persona { //1 TODO
+  class Persona { ///
     constructor(nombre, edad, hobbies, amigos) {
       this.nombre = nombre;
       this.edad = edad;
@@ -106,22 +102,25 @@ function crearClasePersona() {
     addFriend(nombre, edad) {
       // el metodo addFriend recibe un string nombre y un entero edad y debe agregar un objeto:
       // { nombre: nombre, edad: edad} al arreglo de amigos de la persona.
-      // no debe retornar nada.
-    
+      // no debe retornar nada.   
+
     }
 
     addHobby(hobby) {
       // este método debe agregar un hobby (hobby) al arreglo de hobbies de la persona.
       // no debe retornar nada.
-      Persona.this.hobbies.push(hobby);
-      
+      Persona.hobby.push(hobby);
     }
     getFriends() {
       // Escribe una función que retorne un arreglo con sólo los nombres del arreglo de amigos
       // de la persona.
       // Ej:
       // persona.getFriends() // retorna ['toni', 'Leo', 'Manu']
-    
+      var nuevoA = [];
+      for (var i = 0; i < this.amigos.length; i++) {
+        nuevoA.push(amigos[this.nombre]); 
+      }
+      var nuevoA;
     }
 
     getHobbies() {
@@ -131,7 +130,7 @@ function crearClasePersona() {
       
     }
 
-    getPromedioEdad() {
+    getPromedioEdad() { ///
       // Escribe una función que retorne el promedio de edad de los amigos de una persona
       // ej, si la persona tuviera estos amigos:
       // {
@@ -145,7 +144,7 @@ function crearClasePersona() {
       // }
       // persona.getPromedioEdad() // retorna 29
       var promedio= 0;
-      for (var i = 0; i<amigos.length; i++) {
+      for (var i = 0; i<this.amigos.length; i++) {
         promedio = promedio + this.amigos[i].edad;
       }
       return promedio / this.amigos.length;
