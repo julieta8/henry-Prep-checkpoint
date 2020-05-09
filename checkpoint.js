@@ -78,7 +78,12 @@ function pluck(array, propiedad) {
   // var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
   // productos.pluck(productos, 'name') // ['TV LCD', 'Computadora']
   // pista: es una buena oportunidad para usar map.
- 
+  var nuevoA = [];
+  for (var i = 0; i < array.length; i++) {
+    nuevoA.push(array[propiedad]);
+
+  }
+  return nuevoA;
 }
 
 
@@ -99,17 +104,21 @@ function crearClasePersona() {
       
     }
 
-    addFriend(nombre, edad) {
+    addFriend(nombre, edad) { ///
       // el metodo addFriend recibe un string nombre y un entero edad y debe agregar un objeto:
       // { nombre: nombre, edad: edad} al arreglo de amigos de la persona.
       // no debe retornar nada.   
-
+      var objeto = {
+        nombre: nombre,
+        edad: edad,
+      }
+      this.amigos.push(objeto);
     }
 
-    addHobby(hobby) {
+    addHobby(hobby) { ///
       // este método debe agregar un hobby (hobby) al arreglo de hobbies de la persona.
       // no debe retornar nada.
-      Persona.hobby.push(hobby);
+      this.hobbies.push(hobby);
     }
     getFriends() {
       // Escribe una función que retorne un arreglo con sólo los nombres del arreglo de amigos
@@ -118,16 +127,18 @@ function crearClasePersona() {
       // persona.getFriends() // retorna ['toni', 'Leo', 'Manu']
       var nuevoA = [];
       for (var i = 0; i < this.amigos.length; i++) {
-        nuevoA.push(amigos[this.nombre]); 
+        nuevoA.push(this.amigos[this.nombre]); 
       }
-      var nuevoA;
+      return nuevoA;
     }
 
     getHobbies() {
       // Escribe una función que retorne un arreglo con los hobbies de la persona
       // Ej:
       // persona.getHobbies() // retorna ['correr', 'dormir', 'nadar']
-      
+      for (var i = 0; i<this.hobbies.length; i++) {
+        return this.hobbies;
+      }
     }
 
     getPromedioEdad() { ///
