@@ -1,0 +1,19 @@
+.divClass {
+    width: 500px;
+    background-color: yellow;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+}
+#lista {
+    font-size: 25px;
+    color: red;
+}
+img {
+   width: 300px;
+   display: block;
+   margin: auto;
+}
+a:visited {
+    color: indigo;
+    }

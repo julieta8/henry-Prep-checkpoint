@@ -1,0 +1,112 @@
+#div-negro {
+    background-color: black;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-top: 1px solid black;
+    border-bottom: 30px solid black;
+    border-right: 20px solid black;
+    border-left: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 180px;
+    width: 270px;
+    margin: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#uno {
+    background-color: white;
+    border: 3px solid salmon;
+    height: 50px;
+    display: flex;
+    margin: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#uno-contact {
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    justify-content: flex-start;
+}
+#uno-careers {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#uno-about {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    position: relative;
+    left: 1185px;
+    
+}
+#dos {
+    border: 3px solid orangered;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#dos-contact {
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+#dos-careers {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+#dos-about {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+#tres {
+    background-color: white;
+    height: 50px;
+    border: 3px solid orangered;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#tres-contact {
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tres-careers {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tres-about {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
